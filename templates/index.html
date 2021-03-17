@@ -13,15 +13,15 @@
           <form action="{{ url_for('predict')}}"method="post">
             <div class="mb-3">
               <label class="form-label">LSTAT</label>
-              <input type="text" class="form-control" placeholder="LSTAT of population" required="required" />
+              <input type="text" name="LSTAT" class="form-control" placeholder="LSTAT of population" required="required" />
             </div>
             <div class="mb-3">
               <label class="form-label">RM</label>
-              <input type="text" class="form-control" placeholder="Avg num of rooms" required="required" />
+              <input type="text" name="RM" class="form-control" placeholder="Avg num of rooms" required="required" />
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">PTRATIO</label>
-              <input type="text" class="form-control" placeholder="Town pupil-teacher ratio" required="required" />
+              <label class="form-label">PTRATIO</label>
+              <input type="text" name="PTRATIO" class="form-control" placeholder="Town pupil-teacher ratio" required="required" />
             </div>
 
             <button type="submit" class="btn btn-primary">Predict</button>
