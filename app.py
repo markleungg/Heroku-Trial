@@ -17,7 +17,7 @@ def predict():
     
     output = round(prediction[0],2)
     
-    return render_template('index.html', prediction_text = "Employee salary should be ${}".format(output))
+    return render_template('index.html', prediction_text = "The median value of owner occupied homes should be ${}".format(output*1000))
 
 
 if __name__ == "__main__":
